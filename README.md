@@ -179,17 +179,3 @@ Once connected, you can ask your AI assistant:
 ## 📜 License
 
 MIT © [Digital Factory Senegal](https://digitalfactory.sn)
-
----
-
-## 📞 Contact & Support
-
-| Channel | Link |
-|---|---|
-| 🌐 Website | [digitalfactory.sn](https://digitalfactory.sn) |
-| 📧 Email | [infos@digitalfactory.sn](mailto:infos@digitalfactory.sn) |
-| 💬 WhatsApp | [+221 77 800 38 14](https://wa.me/221778003814) |
-| 🐙 GitHub | [github.com/digitalfactorysn](https://github.com/digitalfactorysn) |
-
-- **Issues & Bugs**: [GitHub Issues](https://github.com/digitalfactorysn/mcp-dolibarr/issues)
-- **Contributions**: Pull Requests are welcome!
