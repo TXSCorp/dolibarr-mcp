@@ -146,9 +146,9 @@ export async function handleAccountingTool(name: string, args: Record<string, un
       const unpaidArr = Array.isArray(unpaidInvoices) ? unpaidInvoices : [];
       const bankArr = Array.isArray(bankAccounts) ? bankAccounts : [];
 
-      const totalCA = paidArr.reduce((s: number, inv: unknown) => s + ((inv as Record<string, number>).total_ttc || 0), 0);
-      const totalUnpaid = unpaidArr.reduce((s: number, inv: unknown) => s + ((inv as Record<string, number>).total_ttc || 0), 0);
-      const totalBalance = bankArr.reduce((s: number, acc: unknown) => s + ((acc as Record<string, number>).balance || 0), 0);
+      const totalCA = paidArr.reduce((s: number, inv: unknown) => s + (parseFloat(String((inv as Record<string, unknown>).total_ttc)) || 0), 0);
+      const totalUnpaid = unpaidArr.reduce((s: number, inv: unknown) => s + (parseFloat(String((inv as Record<string, unknown>).total_ttc)) || 0), 0);
+      const totalBalance = bankArr.reduce((s: number, acc: unknown) => s + (parseFloat(String((acc as Record<string, unknown>).balance)) || 0), 0);
 
       return JSON.stringify({
         annee: year,
