@@ -1,83 +1,83 @@
-# MCP Dolibarr Expert 🚀
+# TXS Corp Dolibarr MCP Server 🚀
 
 [![npm version](https://img.shields.io/npm/v/mcp-dolibarr.svg)](https://www.npmjs.com/package/mcp-dolibarr)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub](https://img.shields.io/badge/GitHub-digitalfactorysn-black?logo=github)](https://github.com/digitalfactorysn)
 
-> Un serveur **Model Context Protocol (MCP)** complet pour Dolibarr ERP/CRM. Permets à n'importe quel assistant IA (Claude, Cursor, Windsurf, etc.) d'agir comme un **expert Dolibarr à part entière** : facturation, comptabilité avancée, CRM, projets, stocks, contrats, configuration complète du système et bien plus.
-> 
-> **Développé par [Digital Factory Senegal](https://digitalfactory.sn)**  
-> 🌐 [digitalfactory.sn](https://digitalfactory.sn) &nbsp;|&nbsp; 📞 WhatsApp : [+221 77 800 38 14](https://wa.me/221778003814) &nbsp;|&nbsp; 📧 [infos@digitalfactory.sn](mailto:infos@digitalfactory.sn)
+> A complete **Model Context Protocol (MCP)** server for Dolibarr ERP/CRM. It allows any AI assistant (Claude, Cursor, Windsurf, etc.) to act as a **full-fledged Dolibarr expert**: invoicing, advanced accounting, CRM, projects, inventory, contracts, complete system configuration, and much more.
+>
+> **Developed by [Digital Factory Senegal](https://digitalfactory.sn)**  
+> 🌐 [digitalfactory.sn](https://digitalfactory.sn) &nbsp;|&nbsp; 📞 WhatsApp: [+221 77 800 38 14](https://wa.me/221778003814) &nbsp;|&nbsp; 📧 [infos@digitalfactory.sn](mailto:infos@digitalfactory.sn)
 
 ---
 
-## ✨ Fonctionnalités (55+ outils)
+## ✨ Features (55+ Tools)
 
-### 🏢 Tiers (Clients / Fournisseurs)
-- Lister, rechercher, créer, mettre à jour les tiers
-- Accéder à l'historique (factures, devis, commandes, contacts d'un tiers)
+### 🏢 Third Parties (Customers / Suppliers)
+- List, search, create, and update third parties
+- Access history (invoices, quotes, orders, contacts for a third party)
 
-### 📄 Facturation (10 outils)
-- Créer des factures brouillons, ajouter/modifier/supprimer des lignes
-- Valider des factures officiellement
-- Enregistrer des paiements avec ventilation multi-factures
-- Créer des avoirs (factures de crédit)
-- Envoyer des factures par email
+### 📄 Invoicing (10 Tools)
+- Create draft invoices, add/edit/delete invoice lines
+- Officially validate invoices
+- Record payments with multi-invoice allocation
+- Create credit notes (credit invoices)
+- Send invoices by email
 
-### 📋 Devis & Propositions Commerciales
-- Créer, envoyer, valider, signer, refuser des devis
-- Convertir un devis signé en commande client
+### 📋 Quotes & Commercial Proposals
+- Create, send, validate, sign, and reject quotes
+- Convert a signed quote into a customer order
 
-### 📦 Commandes (Clients & Fournisseurs)
-- Gestion complète du cycle commande → livraison → facturation
-- Commandes fournisseurs et approvisionnement
+### 📦 Orders (Customers & Suppliers)
+- Full management of the order → delivery → invoicing workflow
+- Supplier orders and procurement
 
-### 🏭 Produits & Stocks
-- Catalogue produits et services avec prix, TVA, codes comptables
-- Consultation et mouvements de stock par entrepôt
+### 🏭 Products & Inventory
+- Product and service catalog with pricing, VAT, and accounting codes
+- Inventory lookup and stock movements by warehouse
 
-### 💰 Comptabilité & Trésorerie (Expert)
-- Consultation des comptes bancaires et transactions
-- Plan comptable et journaux comptables
-- Écritures du grand livre
-- **Rapport financier synthétique** : CA, impayés, solde de trésorerie
+### 💰 Accounting & Treasury (Advanced)
+- View bank accounts and transactions
+- Chart of accounts and accounting journals
+- General ledger entries
+- **Financial summary reports**: revenue, outstanding invoices, cash balance
 
 ### 🤝 CRM
-- Contacts individuels
-- Agenda d'activités (appels, RDV, emails commerciaux)
+- Individual contacts
+- Activity calendar (calls, meetings, sales emails)
 
-### 📊 Projets & Tâches
-- Gérer des projets client avec budget et deadline
-- Créer et suivre des tâches
+### 📊 Projects & Tasks
+- Manage customer projects with budgets and deadlines
+- Create and track tasks
 
-### 👥 RH & Administration
-- Lister les utilisateurs/commerciaux
-- Consulter les notes de frais
+### 👥 HR & Administration
+- List users and sales representatives
+- View expense reports
 
-### 📑 Contrats & Abonnements
-- Créer et gérer des contrats client
+### 📑 Contracts & Subscriptions
+- Create and manage customer contracts
 
-### ⚙️ Configuration & Administration Système
-- Informations de la société (avec mise à jour)
-- Activation/désactivation des modules
-- Lecture et écriture des constantes système
-- Modes et conditions de paiement, devises, pays
+### ⚙️ System Configuration & Administration
+- Company information (including updates)
+- Enable/disable modules
+- Read and write system constants
+- Payment methods and terms, currencies, countries
 
 ---
 
 ## 🚀 Installation
 
-### Méthode 1 : Via npx (recommandé, aucune installation)
+### Method 1: Using npx (Recommended, No Installation Required)
 ```bash
 npx mcp-dolibarr
 ```
 
-### Méthode 2 : Installation globale
+### Method 2: Global Installation
 ```bash
 npm install -g mcp-dolibarr
 ```
 
-### Méthode 3 : Depuis le code source
+### Method 3: Install from Source Code
 ```bash
 git clone https://github.com/digitalfactorysn/mcp-dolibarr.git
 cd mcp-dolibarr
@@ -88,20 +88,20 @@ npm install && npm run build
 
 ## ⚙️ Configuration
 
-### 1. Activer l'API REST dans Dolibarr
-Dans votre Dolibarr : **Accueil > Configuration > Modules > Activez "API REST Dolibarr"**
+### 1. Enable the REST API in Dolibarr
+In your Dolibarr instance: **Home > Setup > Modules > Enable "Dolibarr REST API"**
 
-### 2. Obtenir votre Clé API
-Dans votre Dolibarr : **Accueil > Utilisateurs & Groupes > [Votre profil] > Onglet "Fiche utilisateur"**  
-Copiez la valeur du champ **"Clé pour l'API REST"** (générez-en une si elle est vide).
+### 2. Obtain Your API Key
+In your Dolibarr instance: **Home > Users & Groups > [Your Profile] > "User Card" Tab**  
+Copy the value from the **"Key for REST API"** field (generate one if it is empty).
 
 ---
 
-## 🔌 Connexion avec Claude Desktop
+## 🔌 Connect with Claude Desktop
 
-Éditez le fichier de configuration de Claude Desktop :
-- **Mac** : `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows** : `%APPDATA%\Claude\claude_desktop_config.json`
+Edit the Claude Desktop configuration file:
+- **Mac**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
 ```json
 {
@@ -110,21 +110,22 @@ Copiez la valeur du champ **"Clé pour l'API REST"** (générez-en une si elle e
       "command": "npx",
       "args": ["mcp-dolibarr"],
       "env": {
-        "DOLIBARR_URL": "https://votre-instance.dolibarr.com",
-        "DOLIBARR_API_KEY": "VOTRE_CLE_API_SECRETE"
+        "DOLIBARR_URL": "https://your-instance.dolibarr.com",
+        "DOLIBARR_API_KEY": "YOUR_SECRET_API_KEY"
       }
     }
   }
 }
 ```
 
-> Redémarrez Claude Desktop. Un nouvel icône 🔌 apparaîtra — Dolibarr est connecté !
+> Restart Claude Desktop. A new 🔌 icon will appear — Dolibarr is now connected!
 
 ---
 
-## 🔌 Connexion avec Cursor / Windsurf
+## 🔌 Connect with Cursor / Windsurf
 
-Dans les paramètres MCP de votre IDE :
+In your IDE MCP settings:
+
 ```json
 {
   "mcp": {
@@ -133,8 +134,8 @@ Dans les paramètres MCP de votre IDE :
         "command": "npx",
         "args": ["mcp-dolibarr"],
         "env": {
-          "DOLIBARR_URL": "https://votre-instance.dolibarr.com",
-          "DOLIBARR_API_KEY": "VOTRE_CLE_API"
+          "DOLIBARR_URL": "https://your-instance.dolibarr.com",
+          "DOLIBARR_API_KEY": "YOUR_API_KEY"
         }
       }
     }
@@ -144,34 +145,34 @@ Dans les paramètres MCP de votre IDE :
 
 ---
 
-## 💡 Exemples d'utilisation avec l'IA
+## 💡 Example AI Prompts
 
-Une fois connecté, vous pouvez demander à votre IA :
+Once connected, you can ask your AI assistant:
 
-```
-"Quelles sont les 5 dernières factures impayées ?"
+```text
+"What are the last 5 unpaid invoices?"
 → list_invoices (status=1, limit=5)
 
-"Crée un devis pour STN GROUPE pour la maintenance Azure à 150 000 FCFA HT avec 18% TVA"
+"Create a quote for STN GROUPE for Azure maintenance at 150,000 FCFA before tax with 18% VAT"
 → create_proposal → add_proposal_line → validate_proposal
 
-"Quel est notre chiffre d'affaires de 2025 ?"
+"What is our revenue for 2025?"
 → get_financial_summary (year=2025)
 
-"Montre-moi le plan comptable"
+"Show me the chart of accounts"
 → list_accounting_accounts
 
-"Quels modules sont activés sur notre Dolibarr ?"
+"Which modules are enabled on our Dolibarr instance?"
 → list_modules
 ```
 
 ---
 
-## 🔐 Sécurité
+## 🔐 Security
 
-- **Ne committez jamais** votre clé API dans un dépôt Git.
-- Utilisez un compte Dolibarr dédié avec les **permissions minimales** nécessaires.
-- La clé API est transmise uniquement entre votre machine locale et l'instance Dolibarr (pas via des services tiers).
+- **Never commit** your API key to a Git repository.
+- Use a dedicated Dolibarr account with the **minimum required permissions**.
+- The API key is transmitted only between your local machine and your Dolibarr instance (not through third-party services).
 
 ---
 
@@ -183,12 +184,12 @@ MIT © [Digital Factory Senegal](https://digitalfactory.sn)
 
 ## 📞 Contact & Support
 
-| Canal | Lien |
+| Channel | Link |
 |---|---|
-| 🌐 Site web | [digitalfactory.sn](https://digitalfactory.sn) |
+| 🌐 Website | [digitalfactory.sn](https://digitalfactory.sn) |
 | 📧 Email | [infos@digitalfactory.sn](mailto:infos@digitalfactory.sn) |
 | 💬 WhatsApp | [+221 77 800 38 14](https://wa.me/221778003814) |
 | 🐙 GitHub | [github.com/digitalfactorysn](https://github.com/digitalfactorysn) |
 
-- **Issues & bugs** : [GitHub Issues](https://github.com/digitalfactorysn/mcp-dolibarr/issues)
-- **Contribuer** : Les Pull Requests sont les bienvenues !
+- **Issues & Bugs**: [GitHub Issues](https://github.com/digitalfactorysn/mcp-dolibarr/issues)
+- **Contributions**: Pull Requests are welcome!
