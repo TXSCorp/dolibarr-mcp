@@ -137,7 +137,7 @@ export async function handleAccountingTool(name: string, args: Record<string, un
 
       // Factures validées de l'année
       const [paidInvoices, unpaidInvoices, bankAccounts] = await Promise.all([
-        api.get<unknown[]>('/invoices', { status: 2, limit: 500, sqlfilters: `(t.datef:>='${year}-01-01') and (t.datef:<='${year}-12-31')` }),
+        api.get<unknown[]>('/invoices', { status: 2, limit: 500, sqlfilters: `(t.datef:>=:'${year}-01-01') and (t.datef:<=:'${year}-12-31')` }),
         api.get<unknown[]>('/invoices', { status: 1, limit: 500 }),
         api.get<unknown[]>('/bankaccounts', { status: 1 }),
       ]);
